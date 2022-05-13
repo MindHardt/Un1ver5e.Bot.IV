@@ -214,7 +214,7 @@ namespace Un1ver5e.Bot.TextCommands
             DiscordEmbedBuilder deb = new DiscordEmbedBuilder(Statics.EmbedTemplate)
                 .WithDescription($"Состояние бота на момент {DateTime.Now}")
                 .AddField("Используемая память:", memoryLine)
-                .AddField("Пинг:", $"{SystemInfo.GetPing()}мс.")
+                .AddField("Пинг:", $"{SystemInfo.GetPing(ctx.Client)}мс.")
                 .AddField("Бот запущен уже:", $"{DateTime.Now - Process.GetCurrentProcess().StartTime}.");
 
             await ctx.RespondAsync(deb);

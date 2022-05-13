@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using DSharpPlus;
+using System.Diagnostics;
 
 namespace Un1ver5e.Bot
 {
@@ -8,7 +9,7 @@ namespace Un1ver5e.Bot
         /// Gets <see cref="Program.DiscordClient"/>'s WebSocket's latency.
         /// </summary>
         /// <returns></returns>
-        public static int GetPing() => Program.DiscordClient.Ping;
+        public static int GetPing(DiscordClient client) => client.Ping;
         /// <summary>
         /// Gets currently used memory, in Megabytes.
         /// </summary>

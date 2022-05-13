@@ -63,13 +63,15 @@ namespace Un1ver5e.Bot
         /// </summary>
         /// <param name="msg"></param>
         /// <returns></returns>
-        public static async Task ScheduleDestructionAsync(this DiscordMessage msg)
+        public static async Task ScheduleDestructionAsync(this DiscordClient client, DiscordMessage msg)
         {
-            await msg.CreateReactionAsync(Statics.QuickResponds.SelfDestruct);
+            await msg.CreateReactionAsync(client.GetEmoji(":mo_self_destruct:"));
 
             await Task.Delay(Statics.MessageDestructionTime);
 
             await msg.DeleteAsync();
         }
+
+        public static DiscordEmoji GetEmoji(this DiscordClient client, string name) => DiscordEmoji.FromName(client, name);
     }
 }

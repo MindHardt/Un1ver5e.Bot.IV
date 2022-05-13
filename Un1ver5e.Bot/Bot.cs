@@ -68,7 +68,7 @@ namespace Un1ver5e.Bot
                 DiscordEmoji respond =
                     e.Exception is DSharpPlus.CommandsNext.Exceptions.CommandNotFoundException ||
                     e.Exception is DSharpPlus.CommandsNext.Exceptions.InvalidOverloadException ?
-                    Statics.QuickResponds.What : Statics.QuickResponds.Error;
+                    DiscordClient.GetEmoji(":mo_what:") : DiscordClient.GetEmoji(":mo_error:");
 
                 await e.Context.Message.CreateReactionAsync(respond);
 
@@ -93,13 +93,13 @@ namespace Un1ver5e.Bot
 
                         DiscordMessage respond = await e.Context.RespondAsync(dmb);
 
-                        await respond.ScheduleDestructionAsync();
+                        await DiscordClient.ScheduleDestructionAsync(respond);
                     }
                 });
             };
             CommandsNext.CommandExecuted += async (s, e) =>
             {
-                await e.Context.Message.CreateReactionAsync(Statics.QuickResponds.Ok);
+                await e.Context.Message.CreateReactionAsync(DiscordClient.GetEmoji(":mo_ok:"));
 
                 Log.Debug($"Command successfully executed >> {e.Context.Message.Content}");
             };

@@ -39,18 +39,5 @@ namespace Un1ver5e.Bot
             ReadCommentHandling = JsonCommentHandling.Skip,
             WriteIndented = true,
         };
-
-        /// <summary>
-        /// Contains <see cref="DiscordEmoji"/>s for quick responds.
-        /// </summary>
-        public static class QuickResponds
-        {
-            public static readonly DiscordEmoji Ok = DiscordEmoji.FromName(Program.DiscordClient, ":mo_ok:", true);
-            public static readonly DiscordEmoji Error = DiscordEmoji.FromName(Program.DiscordClient, ":mo_error:", true);
-            public static readonly DiscordEmoji What = DiscordEmoji.FromName(Program.DiscordClient, ":mo_what:", true);
-            public static readonly DiscordEmoji NotFound = DiscordEmoji.FromName(Program.DiscordClient, ":mo_not_found:", true);
-            public static readonly DiscordEmoji SelfDestruct = DiscordEmoji.FromName(Program.DiscordClient, ":mo_self_destruct:", true);
-        }
-
     }
 }
