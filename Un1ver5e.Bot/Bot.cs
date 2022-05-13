@@ -134,7 +134,7 @@ namespace Un1ver5e.Bot
                 Log.Information($"{DiscordClient.CurrentUser.Username} is here.");
 
                 await Task.Delay(-1);
-            });
+            }).GetAwaiter().GetResult();
         }
 
         //DEFAULT CONFIGS
