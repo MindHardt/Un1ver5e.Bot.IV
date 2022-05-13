@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Un1ver5e.Bot", "Un1ver5e.Bot\Un1ver5e.Bot.csproj", "{61407FFE-78AB-4FDC-98B2-C8EA5F93221A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Un1ver5e.BoardGames", "Un1ver5e.BoardGames\Un1ver5e.BoardGames.csproj", "{68F63A10-CCDF-4DE6-9D28-1D087D9E1E02}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CA8F1C42-B1DA-4970-A24C-8C7866A6A377}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{61407FFE-78AB-4FDC-98B2-C8EA5F93221A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61407FFE-78AB-4FDC-98B2-C8EA5F93221A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61407FFE-78AB-4FDC-98B2-C8EA5F93221A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61407FFE-78AB-4FDC-98B2-C8EA5F93221A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68F63A10-CCDF-4DE6-9D28-1D087D9E1E02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68F63A10-CCDF-4DE6-9D28-1D087D9E1E02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68F63A10-CCDF-4DE6-9D28-1D087D9E1E02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68F63A10-CCDF-4DE6-9D28-1D087D9E1E02}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B0F68621-A6DC-4A8D-BBF8-5C63CE9F9170}
+	EndGlobalSection
+EndGlobal
